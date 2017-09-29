@@ -71,19 +71,22 @@
             <footer>
                 <div id="contacts">
                     <h2>Contact me</h2>
-                    <form method="POST" action="https://formspree.io/vovabatsyk@gmail.com">
-                        <label for="client-name">
-                            <input type="text" name="client-name" id="client-name" placeholder="Your Name" required>
+                    <form>
+                        <label> 
+                            <input type="text"  id="client-name" placeholder="Your Name" required>
                         </label>
                         <br>
                         <label>
-                            <input type="email" name="client-email" placeholder="Your Adress" required>
+                            <input type="email"  id="client-email" placeholder="Your Adress" required>
                         </label>
                         <br>
-                        <textarea name="message" placeholder="Your Message"></textarea>
-                        <br>
-                        <input type="submit" value="Send">
+                         </label>
+                            <textarea  id="client-message" placeholder="Your Message"></textarea>
+                            <br>
+                        <input type="submit">
                     </form>
+                    <div id="message-box">
+                    </div>
                 </div>
                 <div class="social">
                     <img src="img/call.png" alt="Phone" class="call">
@@ -94,6 +97,9 @@
                 </div>
             </footer>
         </main>
-             <script src="js/index.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>        
+            <script src="js/index.js"></script>
     </body>
 </html>

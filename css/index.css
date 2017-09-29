@@ -9,6 +9,7 @@ html {
 body {
     background-color: #4dd7fa;
     max-width: 900px;
+    min-width: 310px;
     margin: 0 auto;
     border: 1px solid blue;
 }
@@ -125,7 +126,7 @@ p {
 }
 
 footer {
-    height: 350px;
+    height: 400px;
 }
 
 footer div a {
@@ -155,6 +156,8 @@ footer div a {
 
 form {
     float: right;
+    padding-right: 50px;
+    
 }
 
 input[type=text] {
@@ -183,6 +186,10 @@ textarea {
     width: 363px;
     height: 60px;
 }
+#message-box {
+    color: #eb3460
+}
+
 
 .mysite {
     text-align: center;
@@ -220,6 +227,34 @@ textarea {
         width: 100px;
         height: 100px;
     }
+
+form {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 0;
+    
+    }
+    footer {
+        height: 100%;
+    }
+    input[type=text] {
+        width: 520px;
+    }
+    input[type=email] {
+        width: 520px;
+    }
+
+    input[type=submit] {
+        width: 200px;
+        left: 0px;
+    }
+
+    textarea {
+        width: 530px;
+        height: 60px;
+    }
+    
 }
 
 @media (max-width: 770px) {
@@ -228,14 +263,24 @@ textarea {
         text-align: center
     }
 
-    footer {
-        height: 450px;
-    }
-
     input[type=submit] {
         width: 150px;
         height: 30px;
         left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+ 
+    input[type=text] {
+        width: 350px;
+    }
+    input[type=email] {
+        width: 350px;
+    }
+    textarea {
+        width: 361px;
+        height: 60px;
     }
 }
 
