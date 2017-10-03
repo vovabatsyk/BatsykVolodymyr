@@ -9,19 +9,14 @@ html {
 body {
     background-color: #4dd7fa;
     max-width: 900px;
-    min-width: 310px;
+    min-width: 320px;    
     margin: 0 auto;
-    border: 1px solid blue;
-}
-
-header {
-    margin: 1px 1px 1px 1px;
-    padding: 0 1px 1px 1px;
 }
 
 h2 {
     font-size: 40px;
     text-align: center;
+    margin: 50px 0 25px 0;
 }
 
 p {
@@ -30,7 +25,8 @@ p {
 
 .topnav {
     overflow: hidden;
-    background-color: #00c8f8;
+    background-image: url("../img/nav-background.jpg");
+    background-size: cover;
 }
 
 .topnav a {
@@ -51,149 +47,117 @@ p {
 .topnav .icon {
     display: none;
 }
-#home {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 350px;
-    height: 300px;
-}
 
-#home h2 {
-    text-shadow: 3px 3px 5px;
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #home img {
-    width: 350px;
-    height: 300px;
-    position: relative;
-    bottom: 500px;
+    width: 400px;
+}
+
+#home p {
+    text-align: center;
 }
 
 #education {
-    text-align: center;
     border-top-style: solid;
     line-height: 1.5;
+    margin-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#education div {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 0 50px 0;
+    justify-content: space-around;
 }
 
-#education h2 img {
-    height: 60%;
-    padding-top: 50px;
-    margin-top: 0px;
-}
-
-#education img {
-    width: 30%;
-    height: 30%;
+.education-picture {
+    width: 300px;
+    height: auto;
     align-self: center;
-    margin-left: 50px;
-    margin-top: 50px;
 }
 
 #education p {
-    font-size: 20px;
-    align-self: flex-end;
-    margin-bottom: 100px;
-    text-align: left
+    width: 355px;
 }
 
 #experience {
-    text-align: center;
     border-top-style: solid;
     line-height: 1.5;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 0 50px 0;
+    margin-bottom: 50px;
 }
 
-#experience h2 img {
-    height: 60%;
-    padding-top: 50px;
-    margin: 0;
+#experience div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.experience-picture {
+    width: 300px;
+    height: auto;
+    align-self: center;
 }
 
 #experience p {
-    font-size: 20px;
-    align-self: center;
-    width: 33%;
-    text-align: left;
+    width: 355px;
+    margin-top: 25px;
 }
 
-#experience img {
-    width: 33%;
-    height: 33%;
-    align-self: center;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-#hobbies {
-    text-align: center;
+#hobbies-interst {
     border-top-style: solid;
     line-height: 1.5;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#hobbies-interst div {
+    text-align: center;
 }
 
 #portfolio {
     border-top-style: solid;
     line-height: 1.5;
+    margin-bottom: 50px;
 }
-#portfolio img {
-    width: 200px;
+
+.mysite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mysite img {
+    width: 300px;
+    height: auto;
+}
+
+.mysite a {
+    font-size: x-large;
+    text-decoration: none;
+    color: brown
 }
 
 #contacts {
     border-top-style: solid;
     line-height: 1.5;
-}
-
-footer {
-    height: 400px;
-}
-
-footer div a {
-    position: relative;
-    bottom: 30px;
-}
-
-.call {
-    width: 50px;
-    height: 50px;
-    padding-left: 50px;
-    padding-bottom: 10px;
-    margin-right: 20px;
-}
-
-.phone {
-    width: 100px;
-    padding-left: 20px;
-    position: relative;
-    top: 30px
-}
-
-.hobbies img {
-    width: 150px;
-    height: 150px;
+    margin-bottom: 50px;
 }
 
 form {
-    float: right;
-    padding-right: 50px;
-    
+    display: flex;
+    justify-content: space-around;
 }
 
 input[type=text] {
-    width: 354px;
+    width: 300px;
     padding: 8px 5px;
     background-color: #fef8a0;
 }
 
 input[type=email] {
-    width: 354px;
+    width: 300px;
     padding: 8px 5px;
     background-color: #fef8a0;
 }
@@ -202,202 +166,30 @@ input[type=submit] {
     width: 100px;
     height: 30px;
     position: relative;
-    left: 130px;
+    left: 132px;
     background-color: #fefb64;
     box-shadow: 2px 5px 10px;
 }
 
 textarea {
     background-color: #fef8a0;
-    width: 363px;
-    height: 60px;
+    width: 365px;
+    height: 98px;
 }
+
 #message-box {
     color: #eb3460
 }
 
-
-.mysite {
-    text-align: center;
-    margin-bottom: 50px;
+footer {
+    background-image: url("../img/nav-background.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
 }
 
-@media (max-width: 870px) {
-    header nav {
-        overflow: hidden;
-        font-size: 11px;
-    }
-
-    #education, #experience {
-        display: block;
-    }
-
-    #experience img, #education img {
-        margin-left: 0;
-    }
-
-    #education h2, #experience h2 {
-        margin-bottom: 1px;
-    }
-
-    #experience p, #education p {
-        width: 100%;
-        text-align: center;
-    }
-
-    #experience h2 img, #education h2 img {
-        display: none;
-    }
-
-    .hobbies img {
-        width: 100px;
-        height: 100px;
-    }
-
-    form {
-        float: none;
-        text-align: center;
-        margin-bottom: 20px;
-        padding-right: 0;    
-    }
-   
-    footer {
-        height: 100%;
-    }
-    
-    input[type=text] {
-        width: 520px;
-    }
-    
-    input[type=email] {
-        width: 520px;
-    }
-
-    input[type=submit] {
-        width: 200px;
-        left: 0px;
-    }
-
-    textarea {
-        width: 530px;
-        height: 60px;
-    }
-    
+footer img {
+    width: 50px;
 }
-
-@media (max-width: 770px) {
-    form {
-        float: none;
-        text-align: center
-    }
-
-    input[type=submit] {
-        width: 150px;
-        height: 30px;
-        left: 0;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    header {
-        position: fixed;
-        z-index: 1;
-        opacity: 0.9;
-    }
-    .topnav a {
-        display: none;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-
-@media (max-width: 600px) {
-    
-    input[type=text] {
-        width: 350px;
-    }
-    
-    input[type=email] {
-        width: 350px;
-    }
-    
-    textarea {
-        width: 361px;
-        height: 60px;
-    }
-}
-
-@media (max-width: 400px) {
-    #home img {
-        bottom: 550px
-    }
-   
-    input[type=text] {
-        width: 334px;
-    }
-   
-    form {
-        margin-bottom: 30px;
-       }
-   
-    input[type=email] {
-        width: 334px;
-       }
-   
-    input[type=submit] {
-        width: 200px;
-        left: 0px;
-    }
-   
-    textarea {
-        width: 344px;
-        height: 60px;
-    }
-   
-    footer div a {
-        font-size: small;
-    }
-}
-
-@media (max-width: 370px) {
-    #home img {
-        width: 300px;
-        height: 280px;
-    }
-   
-    input[type=text] {
-        width: 280px;
-    }
-   
-    input[type=email] {
-        width: 280px;
-    }
-   
-    input[type=submit] {
-        width: 200px;
-        left: 0px;
-    }
-   
-   textarea {
-        width: 291px;
-    }
-}  

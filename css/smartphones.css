@@ -1,0 +1,35 @@
+@media (max-width: 500px) {
+    #home img {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #education p, #experience p {
+        width: auto;
+    }
+
+    input[type=text], input[type=email] {
+        width: 310px;
+    }
+
+    textarea {
+        width: 311px;
+        margin-right: 5px;
+    }
+
+    input[type=submit] {
+        width: 130px;
+        left: 91px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+
+    footer img {
+        width: 40px;
+    }
+}

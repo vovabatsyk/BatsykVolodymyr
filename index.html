@@ -5,100 +5,115 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Batsyk Volodymyr</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" media="(max-width: 700px)" href="css/tablets.css"> 
+        <link rel="stylesheet" media="(max-width: 500px)" href="css/smartphones.css">   
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">        
     </head>
     <body>
         <header>
-            <div class="topnav" id="myTopnav">
-                <a href="#home">Home</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>                        <a href="#hobbies">Hobbies and interest</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contacts">Contacts</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <div class="topnav"  id="myTopnav">
+                <a href="#home" class="smooth">Home</a>
+                <a href="#education" class="smooth">Education</a>
+                <a href="#experience" class="smooth">Experience</a>                        
+                <a href="#hobbies-interst" class="smooth">Hobbies and interest</a>
+                <a href="#portfolio" class="smooth">Portfolio</a>
+                <a href="#contacts" class="smooth">Contacts</a>
+                <a href="#" class="icon">&#9776;</a>
             </div>
         </header>
         <main>
             <section id="home">
-                <h1>Batsyk Volodymyr</h1>
-                <p>Hello! <br>I’m Vova, I live in Lviv. I am currently studying HTML5/CSS/JavaScript Fundamentals.</p>
                 <img src="img/myphoto.png" alt="My photo" class="logo">
+                <h1>Batsyk Volodymyr</h1>
+                <p>Hello! <br>I’m Vova, I live in Lviv. I am currently studying HTML5/CSS/JavaScript Fundamentals.</p>   
             </section>
             <section id="education">
-                <img src="img/education.png" alt="Education">
-                <h2>Education<br><img src="img/education-line.png" alt="Education line"></h2>
-                <p>
-                    Secondary school №7<br>
-                    1994 - 2004<br>
-                    <br>
-                    Lviv State University of Internal Affairs<br>
-                    2005 - 2010<br>
-                    <br>
-                    Lviv National Agrarian University<br>
-                    2012 - 2014<br>
-                </p>
+                <h2>Education</h2>
+                <div>
+                    <img src="img/education.png" alt="Education" class="education-picture">
+                    <img src="img/education-line.png" alt="Education line" class="education-line">
+                    <p>
+                        Secondary school №7<br>
+                        1994 - 2004<br>
+                        <br>
+                        Lviv State University of Internal Affairs<br>
+                        2005 - 2010<br>
+                        <br>
+                        Lviv National Agrarian University<br>
+                        2012 - 2014<br>
+                    </p>
+                </div>
             </section>
             <section id="experience">
-                <img src="img/experience.png" alt="Experience">
-                <h2>Experience<br><img src="img/experience-line.png" alt="Experience line"></h2>
-                <p>
-                    A lawyer is a private firm<br>
-                    2007 - 2008 <br>
-                    <br>
-                    The commander of the unit of the platoon of communications   military unit A1587 <br>
-                    2012 - 2017<br>
-                </p>
+                <h2>Experience</h2>
+                <div>
+                    <img src="img/experience.png" alt="Experience" class="experience-picture">
+                    <img src="img/experience-line.png" alt="Experience line" class="experience-line">
+                    <p>
+                        A lawyer is a private firm<br>
+                        2007 - 2008 <br>
+                        <br>
+                        The commander of the unit of the platoon of communications   military unit A1587 <br>
+                        2012 - 2017<br>
+                    </p>
+                </div>
             </section>
-            <section id="hobbies">
+            <section id="hobbies-interst">
                 <h2>Hobbies and interest</h2>
-                <div class="hobbies">
-                    <img src="img/hobbies/cars.png" alt="Cars">
-                    <img src="img/hobbies/computer.png" alt="Computer">
-                    <img src="img/hobbies/meet.png" alt="Meet">
-                    <img src="img/hobbies/photo.png" alt="Photo">
-                    <img src="img/hobbies/play.png" alt="Play">
-                    <img src="img/hobbies/shoping.png" alt="Shoping">
-                    <img src="img/hobbies/skiing.png" alt="Skiing">
+                <div>
+                    <img src="img/hobbies-interst/cars.png" alt="Cars">
+                    <img src="img/hobbies-interst/computer.png" alt="Computer">
+                    <img src="img/hobbies-interst/meet.png" alt="Meet">
+                    <img src="img/hobbies-interst/photo.png" alt="Photo">
+                    <img src="img/hobbies-interst/play.png" alt="Play">
+                    <img src="img/hobbies-interst/shoping.png" alt="Shoping">
+                    <img src="img/hobbies-interst/skiing.png" alt="Skiing">
                 </div>
             </section>
             <section id="portfolio">
                 <h2>Portfolio</h2>
-                <div class="mysite">
-                    <a href="index.html"><img src="img/portfolio.png" alt="My site"></a><br>
-                    <a href="index.html">www.mysite.com</a>
-                </div>         
+                <div class="mysite"> 
+                    <a href="index.html"><img src="img/portfolio.png" alt="My website"></a>
+                    <a href="index.html">About me</a>
+                </div>
             </section>
-            <footer>
-                <div id="contacts">
-                    <h2>Contact me</h2>
-                    <form>
-                        <label> 
-                            <input type="text"  id="client-name" placeholder="Your Name" required>
-                        </label>
-                        <br>
-                        <label>
-                            <input type="email"  id="client-email" placeholder="Your Adress" required>
-                        </label>
-                        <br>
-                            <textarea  id="client-message" placeholder="Your Message"></textarea>
-                            <br>
-                        <input type="submit" value="SEND">
-                    </form>
-                    <div id="message-box">
-                    </div>
+            <section id="contacts">
+                <h2>Contact me</h2>
+                <div id="message-box"></div>                 
+                <form>
+                <div>   
+                    <label class="client-name"> 
+                        <input type="text"  id="client-name" placeholder="Your Name" required>
+                    </label>
+                    <br>
+                    <label class="client-email">
+                        <input type="email"  id="client-email" placeholder="Your Email" required>
+                    </label>
+                </div>  
+                <div>
+                    <textarea  id="client-message" placeholder="Your Message"></textarea><br>
+                    <input type="submit" value="SEND">
                 </div>
-                <div class="social">
-                    <img src="img/call.png" alt="Phone" class="call">
-                    <a>+38(067)-000-00-00</a><br>
-                    <a href="https://www.facebook.com/vovabatsyk">
-                        <img src="img/face.png" alt="Facebook" class="phone"></a>
-                    <a href="https://www.facebook.com/vovabatsyk">www.facebook.com/vovabatsyk</a>
-                </div>
-            </footer>
+                </form>
+            </section>
         </main>
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin="anonymous"></script>        
-            <script src="js/index.js"></script>
+        <footer>
+            <div>    
+                <img src="img/call.png" alt="Phone">
+                <a>+38(063)-202-15-17</a>
+            </div>    
+            <div>   
+                <a href="https://www.facebook.com/vovabatsyk">
+                    <img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.facebook.com/vovabatsyk">www.facebook.com/vovabatsyk</a> 
+            </div>    
+        </footer>       
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>        
+        <script src="js/index.js"></script>
     </body>
 </html>
