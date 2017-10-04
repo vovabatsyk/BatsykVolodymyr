@@ -1,9 +1,15 @@
-@media (max-width: 712px) {
-    .topnav a:not(:nth-child(6n)) {
+@media (max-width: 733px) {
+    header {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    .topnav a {
         display: none;
     }
     
-    .topnav a.icon {
+    .topnav a.hamburger {
         float: right;
         display: block;
     }
@@ -16,7 +22,7 @@
         position: relative;
     }
 
-    .topnav.responsive .icon {
+    .topnav.responsive .hamburger {
         position: absolute;
         right: 0;
         top: 0;

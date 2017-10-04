@@ -1,6 +1,6 @@
 $(function() {
-    $('header .icon').click(function() {
-        let x = document.getElementById("myTopnav");
+    $('header').click(function() {
+        let x = document.getElementById("navBar");
         if (x.className === "topnav") {
             x.className += " responsive";
         } else {
