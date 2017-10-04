@@ -2,11 +2,7 @@
     #home img {
         width: 300px;
     }
-
-    h1 {
-        font-size: 2rem;
-    }
-
+    
     #education p, #experience p {
         width: auto;
     }

@@ -7,7 +7,7 @@ $(function() {
             x.className = "topnav";
         }
     });
-
+    
     $('form input[type=submit]').click(function(e) {
         const form = $('form')[0];
         if (!form.checkValidity()) {
@@ -30,13 +30,13 @@ $(function() {
             $('#message-box').html('Sorry, error occurred!');
         });
     });
-
+    
     function blink() {
         $('#message-box').fadeOut('fast').fadeIn('fast')
         setTimeout(blink, 100);
     }
     blink();
-
+    
     $('.smooth').on('click', function(event) {
         var target = $(this.getAttribute('href'));
         if (target.length) {

@@ -1,21 +1,15 @@
-@media (max-width: 700px) {
-    header {
-        position: fixed;
-        z-index: 1;
-        opacity: 0.9;
-    }
-
-    .topnav {
-        margin: 10px;
-    }
-
-    .topnav a {
+@media (max-width: 712px) {
+    .topnav a:not(:nth-child(6n)) {
         display: none;
     }
-
+    
     .topnav a.icon {
         float: right;
         display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
     }
 
     .topnav.responsive {
@@ -33,6 +27,7 @@
         display: block;
         text-align: left;
     }
+  
 
     .education-line, .experience-line {
         display: none;
