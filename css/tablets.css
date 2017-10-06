@@ -4,6 +4,9 @@
         top: 10px;
         left: 10px;
     }
+    .topnav {
+        border-radius: 20px;
+    }
 
     .topnav a {
         display: none;
