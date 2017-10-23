@@ -21,10 +21,6 @@
         position: relative;
     }
 
-    .topnav.responsive {
-        position: relative;
-    }
-
     .topnav.responsive .hamburger {
         position: absolute;
         right: 0;
