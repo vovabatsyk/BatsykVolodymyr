@@ -28,4 +28,30 @@
     footer img {
         width: 40px;
     }
+
+    .link {
+        bottom: 143px;
+    }
+
+    .carousel img {
+        width: 320px
+    }
+
+    .carousel {
+        width: 320px;
+        height: 290px;
+        padding: 0;        
+    }
+
+    .next {
+        right: 60px;
+        top: -25px;   
+        width: 75px;        
+    }
+
+    .prev {
+        left: 60px;
+        top: -25px;     
+        width: 75px;        
+    }
 }

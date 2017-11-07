@@ -3,6 +3,7 @@
         position: fixed;
         top: 10px;
         left: 10px;
+        z-index: 999;        
     }
     .topnav {
         border-radius: 20px;
@@ -15,6 +16,11 @@
     .topnav a.hamburger {
         float: right;
         display: block;
+        color: #3c4fb9;        
+    }
+
+    .topnav.responsive {
+        position: relative;
     }
 
     .topnav.responsive {
@@ -64,5 +70,13 @@
 
     input[type=submit] {
         left: 192px;
+    }
+    
+    .prev {
+        left: -15px;
+    }
+
+    .next {
+        right: -15px;
     }
 }
