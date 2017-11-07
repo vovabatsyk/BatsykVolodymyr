@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" media="(max-width: 733px)" href="css/tablets.css">
         <link rel="stylesheet" media="(max-width: 500px)" href="css/smartphones.css">
+        <link rel="stylesheet" href="css/animate.css">
     </head>
     <body>
         <header>
@@ -25,8 +26,8 @@
             </div>
         </header>
         <main>
-            <section id="home">
-                <img src="img/myphoto.png" alt="Batsyk Volodymyr photo">
+            <section id="home" class="wow zoomIn" data-wow-duration="4s">
+                <img src="img/myphoto.png" class="wow bounceInDown" data-wow-duration="2s" alt="Batsyk Volodymyr photo">
                 <img src="img/logo.png" alt="Batsyk Volodymyr text">
                 <h1>Hello!</h1>
                 <p>I’m Vova, I live in Lviv. I want to start a career as a junior front-end developer in a dynamically developing  company and in a few years become a  team leader. I learn very quickly!</p>
@@ -34,9 +35,9 @@
             <section id="education">
                 <h2>Education</h2>
                 <div>
-                    <img src="img/education.png" alt="Education" class="education-picture">
+                    <img src="img/education.png" alt="Education" class="education-picture wow zoomInLeft" data-wow-offset="200" data-wow-duration="2s">
                     <img src="img/education-line.png" alt="Education line" class="education-line">
-                    <p>
+                    <p class="wow zoomInRight" data-wow-offset="200">
                         Secondary school №7<br>
                         1994 - 2004<br>
                         <br>
@@ -47,11 +48,11 @@
                         2012 - 2014<br>
                         <br>
                         SoftServe IT Academy<br>
-                        HTML5 App Development Fundamentals (HTML5/ CSS3/ JavaScript)<br>September 11, 2017 - October 06, 2017                     
+                        HTML5 App Development Fundamentals (HTML5/ CSS3/ JavaScript)<br>September 11, 2017 - October 06, 2017                    
                     </p>
                 </div>
             </section>
-            <section id="experience">
+            <section id="experience" class="wow zoomInDown" data-wow-offset="200">
                 <h2>Experience</h2>
                 <div>
                     <img src="img/experience.png" alt="Experience" class="experience-picture">
@@ -68,60 +69,78 @@
             <section id="hobbies-interst">
                 <h2>Hobbies and interest</h2>
                 <div>
-                    <img src="img/hobbies-interst/cars.png" alt="Cars">
-                    <img src="img/hobbies-interst/computer.png" alt="Computer">
-                    <img src="img/hobbies-interst/meet.png" alt="Meet">
-                    <img src="img/hobbies-interst/photo.png" alt="Photo">
-                    <img src="img/hobbies-interst/play.png" alt="Play">
-                    <img src="img/hobbies-interst/shoping.png" alt="Shoping">
-                    <img src="img/hobbies-interst/skiing.png" alt="Skiing">
+                    <img src="img/hobbies-interst/cars.png" alt="Cars" class="wow rubberBand" data-wow-duration="4s" data-wow-iteration="3">
+                    <img src="img/hobbies-interst/computer.png" alt="Computer" class="wow rubberBand" data-wow-duration="3.5s" data-wow-iteration="3">
+                    <img src="img/hobbies-interst/meet.png" alt="Meet" class="wow rubberBand" data-wow-duration="3s" data-wow-iteration="3">
+                    <img src="img/hobbies-interst/photo.png" alt="Photo" class="wow rubberBand" data-wow-duration="2.5s" data-wow-iteration="3">
+                    <img src="img/hobbies-interst/play.png" alt="Play" class="wow rubberBand" data-wow-duration="2s" data-wow-iteration="3">
+                    <img src="img/hobbies-interst/shoping.png" alt="Shoping" class="wow rubberBand" data-wow-duration="1.5s" data-wow-iteration="3">
+                    <img src="img/hobbies-interst/skiing.png" alt="Skiing" class="wow rubberBand" data-wow-duration="1s" data-wow-iteration="3">
                 </div>
             </section>
             <section id="portfolio">
                 <h2>Portfolio</h2>
-                <div class="mysite">
-                    <a href="http://euphoria.biz.ua">
-                        <img src="img/euphoria.png" alt="beauty salon Euphoria">
-                    </a>
-                    <a href="http://euphoria.biz.ua">www.euphoria.biz.ua</a>
+                <div id="carousel" class="carousel">
+                    <button class="arrow prev wow zoomInLeft" data-wow-delay="1.5Ss" data-wow-offset="200">⇦</button>
+                    <div class="gallery wow flip" data-wow-iteration="2" data-wow-offset="200">
+                        <ul class="images">
+                            <li>
+                                <a href="http://euphoria.biz.ua" target="_blank">
+                                    <img src="img/euphoria.png" alt="beauty salon Euphoria">
+                                    <p class="link">www.euphoria.biz.ua</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://vovabatsyk.github.io/pasika/" target="_blank">
+                                    <img src="img/pasika.png" alt"">
+                                    <p class="link">www.pasika.biz.ua</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contacts" class="smooth">
+                                    <img src="img/portfolio.png">
+                                    <p class="link">YOUR</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="arrow next wow zoomInRight" data-wow-delay="1s" data-wow-offset="200">⇨</button>
                 </div>
             </section>
             <section id="contacts">
-                <h2>Contact me</h2>
+                <h2 class="wow tada" data-wow-iteration="2">Contact me</h2>
                 <div id="message-box"></div>
                 <form>
                     <div>
                         <label class="client-name">
-                            <input type="text" id="client-name" placeholder="Your Name" required>
+                            <input type="text" id="client-name" class="wow flipInX" data-wow-duration="4s" placeholder="Your Name" required>
                         </label>
                         <br>
                         <label class="client-email">
-                            <input type="email" id="client-email" placeholder="Your Email" required>
+                            <input type="email" id="client-email" class="wow flipInX" data-wow-duration="4s" placeholder="Your Email" required>
                         </label>
                     </div>
                     <div>
-                        <textarea id="client-message" placeholder="Your Message"></textarea>
+                        <textarea id="client-message" class="wow flipInX" data-wow-duration="4s" placeholder="Your Message"></textarea>
                         <br>
-                        <input type="submit" value="SEND">
+                        <input type="submit" class="wow flash" data-wow-iteration="3" value="SEND">
                     </div>
                 </form>
             </section>
         </main>
         <footer>
             <div>
-                <a href="tel:+380632021517">
-                    <img src="img/call.png" alt="Phone">
-                </a>
+                <a href="tel:+380632021517"><img src="img/call.png" alt="Phone"></a>
                 <a href="tel:+380632021517">+38(063)-202-15-17</a>
             </div>
             <div>
-                <a href="https://www.facebook.com/vovabatsyk">
-                    <img src="img/facebook.png" alt="Facebook">
-                </a>
+                <a href="https://www.facebook.com/vovabatsyk"><img src="img/facebook.png" alt="Facebook"></a>
                 <a href="https://www.facebook.com/vovabatsyk">www.facebook.com/vovabatsyk</a>
             </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
-    </body>
-</html>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>    
+    </body></html>
