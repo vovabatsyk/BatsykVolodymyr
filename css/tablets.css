@@ -16,7 +16,8 @@
     .topnav a.hamburger {
         float: right;
         display: block;
-        color: #3c4fb9;        
+        color: #3c4fb9;
+        
     }
 
     .topnav.responsive {
@@ -72,11 +73,4 @@
         left: 192px;
     }
     
-    .prev {
-        left: -15px;
-    }
-
-    .next {
-        right: -15px;
-    }
 }

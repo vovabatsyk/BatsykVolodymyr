@@ -3,7 +3,7 @@
 }
 
 html {
-background-image: url(../img/background.JPG);
+background-image: url(../img/background.jpg);
 background-attachment: fixed;
 background-size: cover;
 }
@@ -20,6 +20,7 @@ h1 {
     text-align: center;
     font-size: 40px;
     margin: 10px;
+    cursor: default;    
 }
 
 h2 {
@@ -31,6 +32,7 @@ h2 {
 
 p {
     font-size: 20px;
+    cursor: default;    
 }
 
 .topnav {
@@ -126,6 +128,11 @@ p {
     text-align: center;
 }
 
+.hobbies-interst {
+    width: 150px;
+    margin: 3px;
+}
+
 #portfolio {
     border-top-style: solid;
     line-height: 1.5;
@@ -164,13 +171,12 @@ input[type=submit] {
     height: 30px;
     position: relative;
     left: 132px;
-    background-color: #e39f3b;
     box-shadow: 2px 5px 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 input[type=submit]:hover {
-    background-color: #212128;
+    background-color: #cdcde0;
     box-shadow: 4px 7px 12px;            
 }
 
@@ -200,103 +206,3 @@ footer a {
     color: white;
 }
 
-.carousel {
-    position: relative;
-    width: 397px;
-    height: 370px;
-    padding: 10px 40px;
-    align-self: center;    
-}
-
-.carousel img {
-width: 320px;
-height: auto;  
-display: block;
-}
-
-.arrow {
-position: absolute;
-top: 60px;
-padding: 0;
-border-radius: 15px;
-border: 1px solid gray;
-font-size: 24px;
-line-height: 24px;
-color: #444;
-display: block;
-}
-
-.arrow:focus {
-outline: none;
-}
-
-.arrow:hover {
-cursor: pointer;
-}
-
-.prev {
-left: -25px;
-width: 50px;
-height: auto;
-top: 40%;
-background: #F44336;  
-box-shadow: 2px 5px 10px;  
-}
-
-.next {
-right: -25px;
-width: 50px;
-height: auto;
-top: 40%;
-background: #F44336;
-box-shadow: 2px 5px 10px;    
-}
-
-.next:hover {
-background: rgb(243, 101, 91);  
-box-shadow: 4px 7px 12px;        
-}
-
-.prev:hover {
-background: rgb(243, 101, 91);  
-box-shadow: 4px 7px 12px;        
-}
-
-.gallery {
-width: 100%;
-overflow: hidden;
-height: 370px;
-
-}
-
-.gallery ul {
-height: 130px;
-width: 9999px;
-margin: 0;
-padding: 0;
-list-style: none;
-transition: margin-left 250ms;
-font-size: 0;
-}
-
-.gallery li {
-display: inline-block;
-}
-
-.link {
-    text-align: center;
-    position: relative;
-    bottom: 212px;
-    color: #F44336;
-    font-size: 30px;
-}
-
-.link:hover {
-    color: #4dd7fa;
-}
-
-.carousel a {
-    text-decoration: none;
-}
-
- 
