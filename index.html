@@ -12,6 +12,7 @@
         <link rel="stylesheet" media="(max-width: 733px)" href="css/tablets.css">
         <link rel="stylesheet" media="(max-width: 500px)" href="css/smartphones.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/slider.css">        
     </head>
     <body>
         <header>
@@ -35,7 +36,7 @@
             <section id="education">
                 <h2>Education</h2>
                 <div>
-                    <img src="img/education.png" alt="Education" class="education-picture wow zoomInLeft" data-wow-offset="200" data-wow-duration="2s">
+                    <img src="img/mortarboard.svg" alt="Education" class="education-picture wow zoomInLeft" data-wow-offset="200" data-wow-duration="2s">
                     <img src="img/education-line.png" alt="Education line" class="education-line">
                     <p class="wow zoomInRight" data-wow-offset="200">
                         Secondary school №7<br>
@@ -55,7 +56,7 @@
             <section id="experience" class="wow zoomInDown" data-wow-offset="200">
                 <h2>Experience</h2>
                 <div>
-                    <img src="img/experience.png" alt="Experience" class="experience-picture">
+                    <img src="img/briefcase.svg" alt="Briefcase" class="experience-picture">
                     <img src="img/experience-line.png" alt="Experience line" class="experience-line">
                     <p>
                         A lawyer is a private firm<br>
@@ -69,42 +70,48 @@
             <section id="hobbies-interst">
                 <h2>Hobbies and interest</h2>
                 <div>
-                    <img src="img/hobbies-interst/cars.png" alt="Cars" class="wow rubberBand" data-wow-duration="4s" data-wow-iteration="3">
-                    <img src="img/hobbies-interst/computer.png" alt="Computer" class="wow rubberBand" data-wow-duration="3.5s" data-wow-iteration="3">
-                    <img src="img/hobbies-interst/meet.png" alt="Meet" class="wow rubberBand" data-wow-duration="3s" data-wow-iteration="3">
-                    <img src="img/hobbies-interst/photo.png" alt="Photo" class="wow rubberBand" data-wow-duration="2.5s" data-wow-iteration="3">
-                    <img src="img/hobbies-interst/play.png" alt="Play" class="wow rubberBand" data-wow-duration="2s" data-wow-iteration="3">
-                    <img src="img/hobbies-interst/shoping.png" alt="Shoping" class="wow rubberBand" data-wow-duration="1.5s" data-wow-iteration="3">
-                    <img src="img/hobbies-interst/skiing.png" alt="Skiing" class="wow rubberBand" data-wow-duration="1s" data-wow-iteration="3">
+                    <img src="img/computer.svg" alt="Computer" class="hobbies-interst wow rubberBand" data-wow-duration="4s" data-wow-iteration="3">
+                    <img src="img/earth-globe.svg" alt="Earth globe" class="hobbies-interst wow rubberBand" data-wow-duration="3.5s" data-wow-iteration="3">
+                    <img src="img/football.svg" alt="Football" class="hobbies-interst wow rubberBand" data-wow-duration="3s" data-wow-iteration="3">
+                    <img src="img/handshake.svg" alt="Handshake" class="hobbies-interst wow rubberBand" data-wow-duration="2.5s" data-wow-iteration="3">
+                    <img src="img/idea.svg" alt="Idea" class="hobbies-interst wow rubberBand" data-wow-duration="2s" data-wow-iteration="3">
+                    <img src="img/physics.svg" alt="Physics" class="hobbies-interst wow rubberBand" data-wow-duration="1.5s" data-wow-iteration="3">
+                    <img src="img/presentation.svg" alt="Presentation" class="hobbies-interst wow rubberBand" data-wow-duration="1s" data-wow-iteration="3">
+                    <img src="img/teamwork.svg" alt="Teamwork" class="hobbies-interst wow rubberBand" data-wow-duration="4s" data-wow-iteration="3">                    
                 </div>
             </section>
             <section id="portfolio">
                 <h2>Portfolio</h2>
-                <div id="carousel" class="carousel">
-                    <button class="arrow prev wow zoomInLeft" data-wow-delay="1.5Ss" data-wow-offset="200">⇦</button>
-                    <div class="gallery wow flip" data-wow-iteration="2" data-wow-offset="200">
-                        <ul class="images">
-                            <li>
+                <div class="accordion css3accordion wow flip" data-wow-iteration="2" data-wow-offset="200">
+                    <span id="slide1"></span>
+                    <span id="slide2"></span>
+                    <span id="slide3"></span>
+                    <ol>
+                        <li class="slide1">
+                            <a href="#slide1"><h2><span>www.euphoria.biz.ua</span></h2></a>
+                            <div>
                                 <a href="http://euphoria.biz.ua" target="_blank">
                                     <img src="img/euphoria.png" alt="beauty salon Euphoria">
-                                    <p class="link">www.euphoria.biz.ua</p>
                                 </a>
-                            </li>
-                            <li>
+                            </div>
+                        </li>
+                        <li class="slide2">
+                            <a href="#slide2"><h2><span>www.pasika.biz.ua</span></h2></a>
+                            <div>
                                 <a href="https://vovabatsyk.github.io/pasika/" target="_blank">
-                                    <img src="img/pasika.png" alt="Аpiary">
-                                    <p class="link">www.pasika.biz.ua</p>
+                                    <img src="img/pasika.png" alt"Аpiary">
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#contacts" class="smooth">
-                                    <img src="img/portfolio.png" alt="Your project">
-                                    <p class="link">YOUR</p>
+                            </div>
+                        </li>
+                        <li class="slide3">
+                            <a href="#slide3"><h2><span>Your project</span></h2></a>
+                            <div>
+                                <a href="tel:+380632021517">
+                                    <img src="img/portfolio.png" alt="Slide Three" />
                                 </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="arrow next wow zoomInRight" data-wow-delay="1s" data-wow-offset="200">⇨</button>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
             </section>
             <section id="contacts">
@@ -134,13 +141,13 @@
                 <a href="tel:+380632021517">+38(063)-202-15-17</a>
             </div>
             <div>
-                <a href="https://www.facebook.com/vovabatsyk"><img src="img/facebook.png" alt="Facebook"></a>
-                <a href="https://www.facebook.com/vovabatsyk">www.facebook.com/vovabatsyk</a>
+                <a href="https://www.facebook.com/vovabatsyk" target="_blank"><img src="img/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/volodymyr-batsyk-081497151/" target="_blank"><img src="img/linkedin.svg" alt="Linkedin"> </a>
             </div>
         </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/carousel.js"></script>    
-    </body></html>
+    </body>
+</html>
