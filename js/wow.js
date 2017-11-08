@@ -1,6 +1,6 @@
 new WOW().init();
 $(function(){
-    $('h2').hover( 
+    $('h1').hover( 
         function() {$(this).addClass('animated jello')},
         function() {$(this).removeClass('animated jello')} 
     );
