@@ -170,7 +170,7 @@ li.slide3  h2 span:after {
         border: 2px solid #353535; 
         border-radius: 6px;
         padding: 0; 
-        height: 215px;
+        height: 239px;
         width: 100%;
     }
 
@@ -191,4 +191,7 @@ li.slide3  h2 span:after {
         width: 200px;
     }
     
+    .css3accordion ol {
+        margin-top: 16px;
+    }
 }    

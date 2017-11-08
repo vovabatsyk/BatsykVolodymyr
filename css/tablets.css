@@ -1,12 +1,9 @@
 @media (max-width: 733px) {
     header {
-        position: fixed;
+        position: static;
         top: 10px;
         left: 10px;
         z-index: 999;        
-    }
-    .topnav {
-        border-radius: 20px;
     }
 
     .topnav a {
@@ -66,7 +63,6 @@
 
     textarea {
         width: 493px;
-        margin-right: 5px;
     }
 
     input[type=submit] {

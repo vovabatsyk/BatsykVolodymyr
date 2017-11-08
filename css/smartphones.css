@@ -9,11 +9,12 @@
 
     input[type=text], input[type=email] {
         width: 310px;
+        margin-left: 4px;        
     }
 
     textarea {
         width: 311px;
-        margin-right: 5px;
+        margin-left: 4px;        
     }
 
     input[type=submit] {
