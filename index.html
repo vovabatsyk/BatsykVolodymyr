@@ -12,9 +12,13 @@
         <link rel="stylesheet" media="(max-width: 733px)" href="css/tablets.css">
         <link rel="stylesheet" media="(max-width: 500px)" href="css/smartphones.css">
         <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/slider.css">        
+        <link rel="stylesheet" href="css/slider.css">   
+        <link rel="stylesheet" href="css/loader.css">                
     </head>
     <body>
+            <div class="loaderArea">
+                <div class="loader"></div>
+            </div>
         <header>
             <div class="topnav" id="navBar">
                 <a href="#home" class="smooth">Home</a>
@@ -85,7 +89,8 @@
                 <div class="accordion css3accordion wow rollIn" data-wow-offset="200">
                     <span id="slide1"></span>
                     <span id="slide2"></span>
-                    <span id="slide3"></span>
+                    <span id="slide3"></span>                    
+                    <span id="slide4"></span>
                     <ol>
                         <li class="slide1">
                             <a href="#slide1"><h2><span>Your project</span></h2></a>
@@ -104,7 +109,15 @@
                             </div>
                         </li>
                         <li class="slide3">
-                            <a href="#slide3"><h2><span>www.euphoria.biz.ua</span></h2></a>
+                            <a href="#slide3"><h2><span>www.nailmaster.biz.ua</span></h2></a>
+                            <div>
+                                <a href="https://vovabatsyk.github.io/nailMaster/" target="_blank">
+                                    <img src="img/nailMaster.png" alt="Nail Master">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide4">
+                            <a href="#slide4"><h2><span>www.euphoria.biz.ua</span></h2></a>
                             <div>
                                 <a href="http://euphoria.biz.ua" target="_blank">
                                     <img src="img/euphoria.png" alt="beauty salon Euphoria">
@@ -113,6 +126,27 @@
                         </li>
                     </ol>
                 </div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/pasika.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/euphoria.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/nailMaster.png" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
             </section>
             <section id="contacts">
                 <h2>Contact me</h2>
@@ -147,9 +181,12 @@
             </div>
         </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js " integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1 " crossorigin="anonymous "></script>
+    <script src="js/loader.js"></script>    
     <script src="js/index.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/wow.js"></script>
     <script src="https://use.fontawesome.com/28b6f16a9b.js"></script>    
     <script src="js/scroll.js"></script>    
     </body>
