@@ -23,11 +23,12 @@
     }
 
     footer a {
-        font-size: 10px;
+        font-size: 0px;
     }
 
     footer img {
         width: 40px;
+        margin-left: 10px;
     }
 
 }

@@ -219,3 +219,7 @@ footer a {
 .fa-arrow-circle-up:before {
     color: white;
 }
+
+#logo {
+    width: 150px;
+}
